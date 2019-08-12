@@ -25,7 +25,7 @@ export default class checkout extends Component {
   async redirectToCheckout(event) {
     event.preventDefault(event)
     const { error } = await this.stripe.redirectToCheckout({
-      items: [{ sku: "sku_DjQJN2HJ1kkvI3", quantity: 4 }],
+      items: [{ sku: "sku_FbwO3tyjKnhwa0", quantity: 1 }],
       successUrl: `http://localhost:8000/page-2/`,
       cancelUrl: `http://localhost:8000/`,
     })
@@ -40,7 +40,7 @@ export default class checkout extends Component {
         style={buttonStyles}
         onClick={event => this.redirectToCheckout(event)}
       >
-        BUY MY BOOK
+        BUY PARFUME
       </button>
     )
   }
