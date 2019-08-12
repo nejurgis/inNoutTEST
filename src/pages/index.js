@@ -6,6 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import Checkout from "../components/checkout"
+import Skus from "../components/Products/Skus"
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <Checkout />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
+      {/* <Skus></Skus> */}
     </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
